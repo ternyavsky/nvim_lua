@@ -22,6 +22,22 @@ require("lazy").setup({
       "MunifTanjim/nui.nvim",
       's1n7ax/nvim-window-picker',
       "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+    },
+    opts = {
+        filesystem = {
+             filtered_items = {
+	 visible = true,
+	 show_hidden_count = true,
+	 hide_dotfiles = false,
+	 hide_gitignored = true,
+	 hide_by_name = {
+	   -- '.git',
+	   -- '.DS_Store',
+	   -- 'thumbs.db',
+	 },
+	never_show = {},
+      },
+        }
     }
 },
 {'nvim-treesitter/nvim-treesitter'},
@@ -37,7 +53,6 @@ require("lazy").setup({
 -- or                              , branch = '0.1.x',
       dependencies = { 'nvim-lua/plenary.nvim' }
     },
-        {'jose-elias-alvarez/null-ls.nvim'},
         {'windwp/nvim-autopairs'},
     {'Djancyp/outline'}, {'terrortylor/nvim-comment'},
     {'windwp/nvim-ts-autotag'}, {
@@ -60,9 +75,18 @@ require("lazy").setup({
     }, {"folke/which-key.nvim"},
        { 'hrsh7th/vim-vsnip' },
     {'hrsh7th/vim-vsnip-integ'},
+    {'morhetz/gruvbox'},
+    {'kaicataldo/material.vim'},
     {'pocco81/auto-save.nvim'},
     {'norcalli/nvim-colorizer.lua'},
-    {'github/copilot.vim'}
+    {'github/copilot.vim'},
+    {
+    "nvimdev/guard.nvim",
+    -- Builtin configuration, optional
+    dependencies = {
+        "nvimdev/guard-collection",
+    },
+}
 
 })
 
