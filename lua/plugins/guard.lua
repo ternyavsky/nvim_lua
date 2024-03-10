@@ -3,6 +3,7 @@ local ft = require('guard.filetype')
 -- Assuming you have guard-collection
 ft('typescript,javascript,typescriptreact'):fmt('prettier')
 ft('python'):fmt('black')
+ft('html'):fmt('prettier')
 
 -- Call setup() LAST!
 require('guard').setup({

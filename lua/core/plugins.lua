@@ -86,7 +86,11 @@ require("lazy").setup({
     dependencies = {
         "nvimdev/guard-collection",
     },
-}
+},
+    {'SirVer/ultisnips'},
+{'mlaursen/vim-react-snippets'},
+{'tpope/vim-commentary'}
+
 
 })
 
