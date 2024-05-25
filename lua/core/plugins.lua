@@ -48,6 +48,9 @@ require("lazy").setup({
        { 'hrsh7th/vim-vsnip' },
     {'hrsh7th/vim-vsnip-integ'},
       {"williamboman/mason.nvim"},
+      {'mhartington/oceanic-next'},
+      {'kaicataldo/material.vim', branch = 'main'},
+      {'ayu-theme/ayu-vim'},
         {
     'nvim-telescope/telescope.nvim', tag = '0.1.5',
 -- or                              , branch = '0.1.x',
